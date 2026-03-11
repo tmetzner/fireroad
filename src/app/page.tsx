@@ -6,8 +6,17 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="relative min-h-[92vh] flex items-center bg-cream-100 overflow-hidden">
-        {/* Topographic contour lines — brand texture */}
+        {/* Layered background: topo lines, mountain silhouettes, grit texture */}
         <div className="topo-hero" aria-hidden="true" />
+        {/* Warm gradient vignette to ground the imagery */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse 80% 70% at 20% 50%, rgba(255,253,248,0.95) 0%, rgba(255,253,248,0.4) 60%, transparent 100%), linear-gradient(to bottom, rgba(255,253,248,0.9) 0%, transparent 30%, transparent 60%, rgba(241,231,210,0.5) 100%)",
+          }}
+          aria-hidden="true"
+        />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-28 md:py-40">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.08] tracking-tight max-w-5xl">

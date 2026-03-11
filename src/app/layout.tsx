@@ -33,7 +33,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navigation />
-        <main className="pt-16 md:pt-20">{children}</main>
+        <main className="pt-20 md:pt-24">{children}</main>
         <Footer />
       </body>
     </html>

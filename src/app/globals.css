@@ -47,11 +47,18 @@ body {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.07;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23EC4D1B' stroke-width='1.2'%3E%3Cellipse cx='400' cy='420' rx='340' ry='180'/%3E%3Cellipse cx='400' cy='400' rx='290' ry='150'/%3E%3Cellipse cx='400' cy='385' rx='240' ry='120'/%3E%3Cellipse cx='400' cy='375' rx='190' ry='95'/%3E%3Cellipse cx='400' cy='368' rx='140' ry='70'/%3E%3Cellipse cx='400' cy='364' rx='90' ry='46'/%3E%3Cellipse cx='400' cy='362' rx='44' ry='24'/%3E%3Cpath d='M60 200 Q200 160 340 220 Q480 280 620 200 Q700 160 780 190'/%3E%3Cpath d='M20 320 Q160 280 300 340 Q440 400 580 320 Q660 280 780 310'/%3E%3Cpath d='M0 500 Q140 460 280 520 Q420 580 560 500 Q660 440 800 480'/%3E%3Cpath d='M20 620 Q180 580 320 640 Q460 700 600 620 Q720 560 800 600'/%3E%3Cpath d='M60 720 Q200 680 340 740 Q480 790 620 720 Q740 660 800 700'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: 800px 800px;
-  background-repeat: repeat;
-  background-position: center;
+  background-image:
+    /* Layer 1: Subtle grain/noise texture for blue-collar grit */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E"),
+    /* Layer 2: Mountain ridge silhouettes — rugged backcountry feel */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1400' height='800' viewBox='0 0 1400 800'%3E%3Cdefs%3E%3ClinearGradient id='mf' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%2373523A' stop-opacity='0'/%3E%3Cstop offset='0.7' stop-color='%2373523A' stop-opacity='0.06'/%3E%3Cstop offset='1' stop-color='%2373523A' stop-opacity='0.10'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0 800 L0 580 Q50 520 100 540 L180 460 L260 500 L340 380 L400 420 L480 340 L540 370 L620 280 L680 320 L740 250 L800 290 L860 220 L920 260 L980 310 L1040 270 L1100 330 L1160 380 L1220 350 L1280 420 L1340 460 L1400 400 L1400 800 Z' fill='url(%23mf)'/%3E%3Cpath d='M0 800 L0 650 Q80 600 140 620 L220 560 L300 590 L380 500 L440 530 L520 470 L580 510 L660 430 L720 470 L800 400 L860 440 L940 380 L1000 420 L1060 460 L1140 410 L1200 450 L1280 500 L1340 530 L1400 490 L1400 800 Z' fill='%232D2520' fill-opacity='0.04'/%3E%3C/svg%3E"),
+    /* Layer 3: Topographic contour lines — trails and terrain mapping */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23EC4D1B' stroke-width='1.2'%3E%3Cellipse cx='400' cy='420' rx='340' ry='180'/%3E%3Cellipse cx='400' cy='400' rx='290' ry='150'/%3E%3Cellipse cx='400' cy='385' rx='240' ry='120'/%3E%3Cellipse cx='400' cy='375' rx='190' ry='95'/%3E%3Cellipse cx='400' cy='368' rx='140' ry='70'/%3E%3Cellipse cx='400' cy='364' rx='90' ry='46'/%3E%3Cellipse cx='400' cy='362' rx='44' ry='24'/%3E%3Cpath d='M60 200 Q200 160 340 220 Q480 280 620 200 Q700 160 780 190'/%3E%3Cpath d='M20 320 Q160 280 300 340 Q440 400 580 320 Q660 280 780 310'/%3E%3Cpath d='M0 500 Q140 460 280 520 Q420 580 560 500 Q660 440 800 480'/%3E%3Cpath d='M20 620 Q180 580 320 640 Q460 700 600 620 Q720 560 800 600'/%3E%3Cpath d='M60 720 Q200 680 340 740 Q480 790 620 720 Q740 660 800 700'/%3E%3C/g%3E%3C/svg%3E"),
+    /* Layer 4: Scratched steel / workshop texture lines */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg stroke='%232D2520' stroke-width='0.5' stroke-linecap='round'%3E%3Cline x1='20' y1='0' x2='380' y2='12' opacity='0.06'/%3E%3Cline x1='0' y1='45' x2='350' y2='52' opacity='0.04'/%3E%3Cline x1='30' y1='88' x2='400' y2='95' opacity='0.05'/%3E%3Cline x1='10' y1='130' x2='390' y2='138' opacity='0.03'/%3E%3Cline x1='0' y1='175' x2='370' y2='180' opacity='0.06'/%3E%3Cline x1='40' y1='210' x2='400' y2='218' opacity='0.04'/%3E%3Cline x1='5' y1='260' x2='360' y2='265' opacity='0.05'/%3E%3Cline x1='25' y1='305' x2='400' y2='310' opacity='0.03'/%3E%3Cline x1='0' y1='348' x2='380' y2='355' opacity='0.06'/%3E%3Cline x1='15' y1='390' x2='395' y2='398' opacity='0.04'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 200px 200px, 1400px 800px, 800px 800px, 400px 400px;
+  background-repeat: repeat, no-repeat, repeat, repeat;
+  background-position: center, bottom right, center, center;
 }
 
 .topo-divider {

@@ -17,14 +17,14 @@ export default function Navigation() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-cream-100/95 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-20 md:h-24">
           <Link href="/" className="flex-shrink-0" aria-label="Fireroad home">
             <Image
               src="/brand-assets/logos/logo_dark.png"
               alt="Fireroad"
-              width={140}
-              height={40}
-              className="h-7 md:h-8 w-auto"
+              width={280}
+              height={80}
+              className="h-14 md:h-16 w-auto"
               priority
             />
           </Link>
