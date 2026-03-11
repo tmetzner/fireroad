@@ -15,16 +15,16 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-cream-100/90 backdrop-blur-md border-b border-cream-300/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-cream-100/95 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link href="/" className="flex-shrink-0" aria-label="Fireroad home">
             <Image
-              src="/brand-assets/logos/wordmark_dark.svg"
+              src="/brand-assets/logos/logo_dark.png"
               alt="Fireroad"
               width={140}
-              height={28}
-              className="h-6 md:h-7 w-auto"
+              height={40}
+              className="h-7 md:h-8 w-auto"
               priority
             />
           </Link>
@@ -39,6 +39,14 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
+            <a
+              href="https://www.fireroad.vc/apply"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-semibold tracking-wide text-brown-300 hover:text-brown-200 transition-colors ml-2"
+            >
+              Apply
+            </a>
           </div>
 
           <button
@@ -68,6 +76,9 @@ export default function Navigation() {
         </div>
       </div>
 
+      {/* Thin divider */}
+      <div className="h-px bg-cream-300/60" />
+
       {isOpen && (
         <div className="md:hidden bg-cream-100 border-t border-cream-300/50">
           <div className="px-6 py-6 space-y-4">
@@ -81,6 +92,15 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
+            <a
+              href="https://www.fireroad.vc/apply"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-lg text-brown-300 hover:text-brown-200 transition-colors font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              Apply
+            </a>
           </div>
         </div>
       )}

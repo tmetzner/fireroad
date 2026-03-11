@@ -8,11 +8,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
           <div className="md:col-span-2">
             <Image
-              src="/brand-assets/logos/logo_dark.svg"
+              src="/brand-assets/logos/logo_light.png"
               alt="Fireroad"
               width={200}
               height={60}
-              className="h-10 w-auto mb-6 invert brightness-200"
+              className="h-9 w-auto mb-6"
             />
             <p className="text-brown-100 text-sm leading-relaxed max-w-md">
               Technology for the backbone of the economy.
