@@ -44,7 +44,7 @@ body {
 /* ── Real Economy Hero ── */
 
 .real-economy-hero {
-  min-height: 75vh;
+  min-height: 80vh;
   background-color: #1a1512;
 }
 
@@ -52,9 +52,9 @@ body {
 .hero-bg-image {
   position: absolute;
   inset: 0;
-  background-image: url("/brand-assets/images/hero-bg.jpg");
+  background-image: url("/brand-assets/images/hero-skilled-labor.png");
   background-size: cover;
-  background-position: center 40%;
+  background-position: center center;
   background-repeat: no-repeat;
   will-change: transform;
 }
@@ -90,6 +90,13 @@ body {
   }
   100% {
     background-position: 800px 400px;
+  }
+}
+
+/* Responsive background positioning — keep subject visible on mobile */
+@media (max-width: 768px) {
+  .hero-bg-image {
+    background-position: 65% center;
   }
 }
 
