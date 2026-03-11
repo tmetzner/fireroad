@@ -1,35 +1,35 @@
 import Link from "next/link";
 import portfolio from "@/data/portfolio.json";
+import HeroParallax from "@/components/HeroParallax";
 
 export default function Home() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative min-h-[92vh] flex items-center bg-cream-100 overflow-hidden">
-        {/* Layered background: topo lines, mountain silhouettes, grit texture */}
-        <div className="topo-hero" aria-hidden="true" />
-        {/* Warm gradient vignette to ground the imagery */}
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(ellipse 80% 70% at 20% 50%, rgba(255,253,248,0.95) 0%, rgba(255,253,248,0.4) 60%, transparent 100%), linear-gradient(to bottom, rgba(255,253,248,0.9) 0%, transparent 30%, transparent 60%, rgba(241,231,210,0.5) 100%)",
-          }}
-          aria-hidden="true"
-        />
+      {/* Hero — Real Economy */}
+      <section className="real-economy-hero relative flex items-center overflow-hidden">
+        {/* Photographic background with parallax */}
+        <div className="hero-bg-image" aria-hidden="true" />
+        <HeroParallax />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-28 md:py-40">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.08] tracking-tight max-w-5xl">
+        {/* Dark cinematic gradient overlay for text readability */}
+        <div className="hero-gradient-overlay" aria-hidden="true" />
+
+        {/* Topographic contour line overlay — brand texture */}
+        <div className="hero-topo-overlay" aria-hidden="true" />
+
+        {/* Hero content — left-aligned editorial layout */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32 md:py-44 lg:py-52">
+          <h1 className="text-4xl md:text-6xl lg:text-[5.5rem] font-bold leading-[1.06] tracking-tight max-w-5xl text-cream-100">
             Small businesses are the backbone of America.
           </h1>
-          <p className="mt-4 text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.08] tracking-tight max-w-5xl text-brown-200">
+          <p className="mt-5 text-2xl md:text-4xl lg:text-[3.5rem] font-bold leading-[1.1] tracking-tight max-w-5xl text-cream-300/90">
             But the technology built for them has lagged for decades.
           </p>
-          <p className="mt-10 text-xl md:text-2xl font-semibold text-brown-300 max-w-2xl leading-snug">
+          <p className="mt-10 text-xl md:text-2xl font-semibold text-cream-100 max-w-2xl leading-snug">
             Fireroad backs founders building technology for the backbone of the
             economy.
           </p>
-          <p className="mt-5 text-lg md:text-xl text-brown-200 max-w-2xl leading-relaxed">
+          <p className="mt-5 text-lg md:text-xl text-cream-300/80 max-w-2xl leading-relaxed">
             We invest in technology that helps small businesses stay local, scale
             efficiently, and compete in the AI economy.
           </p>
@@ -38,7 +38,7 @@ export default function Home() {
               href="https://www.fireroad.vc/apply"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-8 py-4 bg-brown-300 text-cream-200 font-semibold text-base tracking-wide hover:bg-brown-200 transition-colors"
+              className="inline-flex items-center px-8 py-4 bg-orange-dark text-cream-100 font-semibold text-base tracking-wide hover:bg-orange-light transition-colors"
             >
               Apply for funding
             </a>
