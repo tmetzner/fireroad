@@ -40,3 +40,30 @@ body {
   background-color: var(--color-teal-dark);
   color: white;
 }
+
+/* ── Topographic contour-line brand texture ── */
+
+.topo-hero {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.07;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23EC4D1B' stroke-width='1.2'%3E%3Cellipse cx='400' cy='420' rx='340' ry='180'/%3E%3Cellipse cx='400' cy='400' rx='290' ry='150'/%3E%3Cellipse cx='400' cy='385' rx='240' ry='120'/%3E%3Cellipse cx='400' cy='375' rx='190' ry='95'/%3E%3Cellipse cx='400' cy='368' rx='140' ry='70'/%3E%3Cellipse cx='400' cy='364' rx='90' ry='46'/%3E%3Cellipse cx='400' cy='362' rx='44' ry='24'/%3E%3Cpath d='M60 200 Q200 160 340 220 Q480 280 620 200 Q700 160 780 190'/%3E%3Cpath d='M20 320 Q160 280 300 340 Q440 400 580 320 Q660 280 780 310'/%3E%3Cpath d='M0 500 Q140 460 280 520 Q420 580 560 500 Q660 440 800 480'/%3E%3Cpath d='M20 620 Q180 580 320 640 Q460 700 600 620 Q720 560 800 600'/%3E%3Cpath d='M60 720 Q200 680 340 740 Q480 790 620 720 Q740 660 800 700'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 800px 800px;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.topo-divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='120' viewBox='0 0 800 120'%3E%3Cg fill='none' stroke='%23EC4D1B' stroke-width='1'%3E%3Cpath d='M0 30 Q200 10 400 40 Q600 70 800 30'/%3E%3Cpath d='M0 60 Q200 40 400 70 Q600 100 800 60'/%3E%3Cpath d='M0 90 Q200 70 400 100 Q600 120 800 90'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 800px 120px;
+  background-repeat: repeat-x;
+  background-position: center top;
+}

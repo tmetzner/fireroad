@@ -29,13 +29,19 @@ export default function PortfolioPage() {
               className="group bg-cream-200 rounded-xl p-6 md:p-8 hover:shadow-lg transition-all hover:-translate-y-1"
             >
               <div className="flex items-center gap-4 mb-4">
-                <Image
-                  src={company.logo}
-                  alt={`${company.name} logo`}
-                  width={32}
-                  height={32}
-                  className="h-8 w-8 opacity-60"
-                />
+                {company.logo ? (
+                  <Image
+                    src={company.logo}
+                    alt={`${company.name} logo`}
+                    width={32}
+                    height={32}
+                    className="h-8 w-8 opacity-60"
+                  />
+                ) : (
+                  <div className="h-8 w-8 rounded bg-cream-300 flex items-center justify-center text-brown-200 text-xs font-bold">
+                    {company.name.charAt(0)}
+                  </div>
+                )}
                 <h2 className="text-lg font-bold text-brown-300 group-hover:text-teal-dark transition-colors">
                   {company.name}
                 </h2>
