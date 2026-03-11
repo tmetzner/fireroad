@@ -1,0 +1,65 @@
+[
+  {
+    "name": "FieldPulse",
+    "description": "All-in-one business management software for field service contractors.",
+    "logo": "/brand-assets/icons/icon_dark.svg",
+    "url": "https://fieldpulse.com",
+    "fund": "Fund I"
+  },
+  {
+    "name": "Curbio",
+    "description": "Pre-sale home improvement for real estate agents and homeowners.",
+    "logo": "/brand-assets/icons/icon_dark.svg",
+    "url": "https://curbio.com",
+    "fund": "Fund I"
+  },
+  {
+    "name": "Truework",
+    "description": "Income and employment verification platform for lenders and employers.",
+    "logo": "/brand-assets/icons/icon_dark.svg",
+    "url": "https://truework.com",
+    "fund": "Fund I"
+  },
+  {
+    "name": "Drata",
+    "description": "Automated security and compliance platform for growing businesses.",
+    "logo": "/brand-assets/icons/icon_dark.svg",
+    "url": "https://drata.com",
+    "fund": "Fund I"
+  },
+  {
+    "name": "Lula",
+    "description": "Insurance and fleet management solutions for small businesses.",
+    "logo": "/brand-assets/icons/icon_dark.svg",
+    "url": "https://lula.is",
+    "fund": "Fund I"
+  },
+  {
+    "name": "Shelf Engine",
+    "description": "Automated ordering platform that reduces waste for grocery retailers.",
+    "logo": "/brand-assets/icons/icon_dark.svg",
+    "url": "https://shelfengine.com",
+    "fund": "Fund I"
+  },
+  {
+    "name": "Axle Health",
+    "description": "Workforce management platform for in-home healthcare providers.",
+    "logo": "/brand-assets/icons/icon_dark.svg",
+    "url": "https://axlehealth.com",
+    "fund": "Fund I"
+  },
+  {
+    "name": "Adaptive",
+    "description": "Financial management software built for construction companies.",
+    "logo": "/brand-assets/icons/icon_dark.svg",
+    "url": "https://adaptive.build",
+    "fund": "Fund I"
+  },
+  {
+    "name": "Relay",
+    "description": "Business banking platform designed for small businesses and startups.",
+    "logo": "/brand-assets/icons/icon_dark.svg",
+    "url": "https://relayfi.com",
+    "fund": "Fund I"
+  }
+]
